@@ -1,0 +1,92 @@
+# Configuration file for ML Cryptanalysis Project
+
+# Data Generation Settings
+data_generation:
+  caesar_samples: 1000
+  vigenere_samples: 1000
+  substitution_samples: 1000
+  combined_samples_per_cipher: 500
+  
+  # Sample texts for encryption
+  sample_texts:
+    - "the quick brown fox jumps over the lazy dog"
+    - "hello world this is a test message"
+    - "cryptography is the practice of secure communication"
+    - "machine learning can be applied to cryptanalysis"
+    - "frequency analysis is a powerful cryptanalytic technique"
+    - "the caesar cipher is one of the oldest encryption methods"
+    - "substitution ciphers replace each letter with another"
+    - "vigenere cipher uses a keyword for encryption"
+    - "breaking ciphers requires understanding patterns"
+    - "modern cryptography uses complex mathematical algorithms"
+
+# Feature Engineering Settings
+feature_engineering:
+  # Character frequency analysis
+  include_char_frequencies: true
+  include_bigram_frequencies: true
+  include_trigram_frequencies: true
+  
+  # Statistical features
+  include_statistical_features: true
+  include_entropy_features: true
+  include_frequency_deviation: true
+  
+  # N-gram settings
+  top_bigrams: ['th', 'he', 'an', 'in', 'er', 're', 'on', 'at', 'nd', 'st']
+  top_trigrams: ['the', 'and', 'ing', 'ion', 'tio', 'for', 'nde', 'has', 'nce', 'edt']
+
+# Model Training Settings
+model_training:
+  # Random Forest parameters
+  random_forest:
+    n_estimators: [50, 100, 200]
+    max_depth: [5, 10, 15, null]
+    min_samples_split: [2, 5, 10]
+    random_state: 42
+  
+  # SVM parameters
+  svm:
+    C: [0.1, 1, 10]
+    gamma: ['scale', 'auto']
+    kernel: ['rbf', 'linear']
+    random_state: 42
+  
+  # Neural Network parameters
+  neural_network:
+    hidden_layer_sizes: [(50,), (100,), (100, 50)]
+    alpha: [0.0001, 0.001, 0.01]
+    learning_rate: ['constant', 'adaptive']
+    max_iter: 500
+    random_state: 42
+
+# Evaluation Settings
+evaluation:
+  test_samples: 200
+  cross_validation_folds: 5
+  random_state: 42
+  
+  # Metrics to calculate
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1_score
+    - roc_auc
+
+# File Paths
+paths:
+  data_dir: "data"
+  models_dir: "models"
+  results_dir: "results"
+  notebooks_dir: "notebooks"
+  scripts_dir: "scripts"
+
+# Logging Settings
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+  file: "logs/cryptanalysis.log"
+
+# Reproducibility
+random_seed: 42 
