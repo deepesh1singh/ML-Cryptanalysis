@@ -23,7 +23,6 @@ The project implements ML-based attacks on classical ciphers including:
 ml_cryptanalysis/
 ├── data/               # Raw and processed datasets
 ├── models/             # Trained model files
-├── notebooks/          # Jupyter notebooks for analysis
 ├── scripts/            # Training and evaluation scripts
 ├── results/            # Output files and visualizations
 ├── src/                # Core source code
