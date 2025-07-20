@@ -104,20 +104,6 @@ The project achieves:
 - **Vigenère Cipher**: ~85% accuracy with n-gram features
 - **Substitution Cipher**: ~70% accuracy with advanced features
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Classical cryptography literature
-- Scikit-learn documentation
-- Cryptography community resources 
