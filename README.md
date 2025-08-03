@@ -17,6 +17,61 @@ The project implements ML-based attacks on classical ciphers including:
 - **Evaluation**: Comprehensive metrics and visualizations
 - **Reproducibility**: Fixed random seeds and version control
 
+## Tools and Technologies
+
+### Core Machine Learning & Data Science
+- **NumPy** (≥1.21.0) - Numerical computing and array operations
+- **Pandas** (≥1.3.0) - Data manipulation and analysis
+- **Scikit-learn** (≥1.0.0) - Machine learning algorithms and utilities
+- **SciPy** (≥1.7.0) - Scientific computing
+
+### Deep Learning (Optional)
+- **TensorFlow** (≥2.8.0) - Deep learning framework
+- **PyTorch** (≥1.10.0) - Deep learning framework
+- **Keras** (≥2.8.0) - High-level neural network API
+
+### Visualization
+- **Matplotlib** (≥3.5.0) - Plotting and visualization
+- **Seaborn** (≥0.11.0) - Statistical data visualization
+- **Plotly** (≥5.0.0) - Interactive plotting
+
+### Development & Analysis
+- **Jupyter** (≥1.0.0) - Interactive notebooks
+- **IPyKernel** (≥6.0.0) - Jupyter kernel
+- **Notebook** (≥6.4.0) - Web-based notebook interface
+
+### Data Processing & NLP
+- **NLTK** (≥3.6.0) - Natural language processing
+- **Textstat** (≥0.7.0) - Text statistics
+- **Langdetect** (≥1.0.9) - Language detection
+
+### Configuration & Utilities
+- **PyYAML** (≥6.0) - YAML configuration files
+- **Python-dotenv** (≥0.19.0) - Environment variable management
+- **TQDM** (≥4.62.0) - Progress bars
+
+### Testing & Code Quality
+- **Pytest** (≥6.2.0) - Testing framework
+- **Black** (≥21.0.0) - Code formatting
+- **Flake8** (≥3.9.0) - Code linting
+
+### Model Persistence
+- **Joblib** (≥1.1.0) - Model serialization
+- **Pickle5** (≥0.0.11) - Python object serialization
+
+### Key ML Algorithms
+- **Random Forest Classifier** - For cipher classification
+- **Support Vector Machine (SVM)** - With RBF and linear kernels
+- **Neural Networks (MLPClassifier)** - Multi-layer perceptron
+- **GridSearchCV** - Hyperparameter tuning
+- **Cross-validation** - Model evaluation
+
+### Cryptanalysis Techniques
+- **Character Frequency Analysis** - English letter frequency patterns
+- **N-gram Analysis** - Bigram and trigram frequency features
+- **Statistical Features** - Text statistics and entropy
+- **Frequency Deviation** - Deviation from expected English frequencies
+
 ## Directory Structure
 
 ```
