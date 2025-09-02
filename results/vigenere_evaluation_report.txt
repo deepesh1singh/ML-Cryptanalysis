@@ -1,0 +1,39 @@
+============================================================
+ML CRYPTANALYSIS MODEL EVALUATION REPORT
+============================================================
+
+MODEL INFORMATION:
+  Model Path: models/vigenere_random_forest_model.pkl
+  Cipher Type: vigenere
+  Test Samples: 200
+
+PERFORMANCE METRICS:
+  Accuracy: 1.0000
+  Precision: 1.0000
+  Recall: 1.0000
+  F1-Score: 1.0000
+
+DETAILED CLASSIFICATION REPORT:
+
+  vigenere:
+    precision: 1.0000
+    recall: 1.0000
+    f1-score: 1.0000
+    support: 200.0000
+
+  macro avg:
+    precision: 1.0000
+    recall: 1.0000
+    f1-score: 1.0000
+    support: 200.0000
+
+  weighted avg:
+    precision: 1.0000
+    recall: 1.0000
+    f1-score: 1.0000
+    support: 200.0000
+
+CONFUSION MATRIX SUMMARY:
+  Total Predictions: 200
+  Correct Predictions: 200
+  Incorrect Predictions: 0
